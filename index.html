@@ -30,6 +30,10 @@
               <label for="phone">PHONE</label>
               <input type="tel" name="phone" id="phone" />
             </div>
+            <div class="input">
+              <label for="date">BOOKING DATE</label>
+              <input type="date" name="date" id="date" />
+            </div>
           </div>
           <div class="calendar">
             <table>
@@ -60,18 +64,18 @@
                 </tr>
                 <tr class="time">
                   <td>10:30 am</td>
-                  <td>10:30 am</td>
+                  <td class="active">10:30 am</td>
                   <td>10:30 am</td>
                   <td>10:30 am</td>
                 </tr>
                 <tr class="time">
+                  <td class="inactive">10:45 am</td>
                   <td>10:45 am</td>
-                  <td>10:45 am</td>
-                  <td>10:45 am</td>
+                  <td class="inactive">10:45 am</td>
                   <td>10:45 am</td>
                 </tr>
                 <tr class="time">
-                  <td>11:00 am</td>
+                  <td class="inactive">11:00 am</td>
                   <td>11:00 am</td>
                   <td>11:00 am</td>
                   <td>11:00 am</td>
@@ -93,4 +97,6 @@
       </div>
     </div>
   </body>
+
+  <script src="./app.js"></script>
 </html>

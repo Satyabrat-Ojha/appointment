@@ -5,17 +5,19 @@
   font-family: poppins, sans-serif;
 }
 
+body {
+  background-color: antiquewhite;
+}
+
 .container {
   display: flex;
-  height: 100vh;
-  width: 100vw;
-  background-color: antiquewhite;
   justify-content: center;
   align-items: center;
 }
 
 .wrapper {
-  width: 60vw;
+  margin-top: 10px;
+  min-width: 60vw;
   background-color: rgb(240, 240, 240);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -41,6 +43,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
 }
 
 .main .input {
@@ -69,6 +79,9 @@
   border-color: rgb(205, 205, 205);
   border-radius: 3px;
   padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .day th {
@@ -88,6 +101,14 @@
   color: white;
   background-color: rgb(67, 178, 225);
   padding: 0.6rem;
+}
+
+.time .active {
+  background-color: orange;
+}
+
+.time .inactive {
+  background-color: rgb(205, 205, 205);
 }
 
 .more td {
